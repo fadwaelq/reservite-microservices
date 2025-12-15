@@ -1,0 +1,17 @@
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/dto/RoomAvailabilityResponse.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/config/DataInitializer.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/exception/GlobalExceptionHandler.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/dto/HotelDTO.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/repository/RoomRepository.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/dto/RoomBookingRequest.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/config/SecurityConfig.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/HotelServiceApplication.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/entity/Hotel.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/repository/HotelRepository.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/dto/RoomAvailabilityRequest.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/controller/RoomController.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/service/HotelService.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/controller/HotelController.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/dto/RoomDTO.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/service/HotelServiceImpl.java
+/Users/fadwaelqaqia/IdeaProjects/reservite-microservices/hotel-service/src/main/java/com/reservite/hotelservice/entity/Room.java

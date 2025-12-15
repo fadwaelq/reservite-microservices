@@ -1,0 +1,61 @@
+server:
+  port: 8085
+  max-http-header-size: 48KB
+
+spring:
+  application:
+    name: payment-service
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  datasource:
+    url: jdbc:h2:mem:paymentdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# Enregistrement dans Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+
+# Configuration PayPal (EXTERNALISÉE)
+paypal:
+  mode: ${PAYPAL_MODE:sandbox}
+  client-id: ${PAYPAL_CLIENT_ID:AZFKjnE6uhN6GzhM_u-SdWp5fRMqFwpTOyQFvZaLQg8kNrGZKvDCQpWbC-kqB_blm0GOl8DhxKZGFB9G}
+  client-secret: ${PAYPAL_CLIENT_SECRET:EE_NN8FWhQKhAWaoCRRzIW2n-qZ0iWQV_xIa0xzEfJiONtJXmzHkYRx9MfHZM3WJzhUXEp3fEGBkKGCW}
+
+# URL du service Reservation
+reservation:
+  service:
+    url: ${RESERVATION_SERVICE_URL:http://localhost:8082}
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.reservite: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
